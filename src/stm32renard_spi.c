@@ -1,4 +1,5 @@
 #include <stdbool.h>
+#include <stdio.h>
 
 #include "stm32renard_gpio.h"
 #include "stm32renard_spi.h"

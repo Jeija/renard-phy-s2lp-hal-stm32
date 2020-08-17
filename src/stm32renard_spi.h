@@ -8,9 +8,9 @@
 #define STM32RENARD_SPI_CLK_ENABLE()                  __SPI1_CLK_ENABLE()
 #define STM32RENARD_SPI_AF                            GPIO_AF0_SPI1
 
-#define STM32RENARD_SPI_MISO_PORT                     GPIOA
-#define STM32RENARD_SPI_MISO_PIN                      GPIO_PIN_6
-#define STM32RENARD_SPI_MISO_CLK_ENABLE()             __GPIOA_CLK_ENABLE()
+#define STM32RENARD_SPI_MISO_PORT                     GPIOB
+#define STM32RENARD_SPI_MISO_PIN                      GPIO_PIN_4
+#define STM32RENARD_SPI_MISO_CLK_ENABLE()             __GPIOB_CLK_ENABLE()
 
 #define STM32RENARD_SPI_MOSI_PORT                     GPIOA
 #define STM32RENARD_SPI_MOSI_PIN                      GPIO_PIN_7
@@ -21,7 +21,7 @@
 #define STM32RENARD_SPI_SCLK_CLK_ENABLE()             __GPIOB_CLK_ENABLE()
 
 #define STM32RENARD_SPI_CS_PORT                       GPIOA
-#define STM32RENARD_SPI_CS_PIN                        GPIO_PIN_1
+#define STM32RENARD_SPI_CS_PIN                        GPIO_PIN_15
 #define STM32RENARD_SPI_CS_CLK_ENABLE()               __GPIOA_CLK_ENABLE()
 
 /* DMA Hardware Configuration */
