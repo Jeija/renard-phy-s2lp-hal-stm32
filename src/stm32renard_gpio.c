@@ -49,7 +49,7 @@ void stm32renard_gpio_interrupt_trigger(bool rising)
  */
 void renard_phy_s2lp_hal_stm32_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
 {
-	if(GPIO_Pin == GPIO_PIN_0)
+	if(GPIO_Pin == STM32RENARD_GPIO_PIN)
 	{
 		stm32renard_flags.gpio_raised = true;
 		__HAL_GPIO_EXTI_CLEAR_IT(GPIO_Pin);
