@@ -3,6 +3,7 @@
 
 #include "stm32renard_gpio.h"
 #include "stm32renard_spi.h"
+#include "conf_hardware.h"
 
 static SPI_HandleTypeDef SpiHandle;
 static DMA_HandleTypeDef hdma_tx;

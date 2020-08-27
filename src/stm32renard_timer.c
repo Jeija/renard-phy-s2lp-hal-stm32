@@ -1,8 +1,8 @@
 #include "stm32l0xx_hal.h"
 
 #include "stm32renard_timer.h"
-
 #include "stm32renard_flags.h"
+#include "conf_hardware.h"
 
 static RTC_HandleTypeDef RtcHandle = {.Instance = RTC};
 static volatile uint32_t remaining_milliseconds = 0;
