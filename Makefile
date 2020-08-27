@@ -1,8 +1,9 @@
 TARGET := renard-phy-s2lp-hal-stm32.a
 SRCDIR := src/
 OBJDIR := obj/
+CFGDIR := conf/
 
-CFLAGS := -I$(LIBRENARD_INCDIR) -Wall -std=c99 -Og
+CFLAGS := -Wall -std=c99 -Og
 
 ARCHFLAGS :=
 
@@ -19,7 +20,7 @@ $(OBJDIR):
 	mkdir -p $(OBJDIR)
 
 $(OBJDIR)%.o: $(SRCDIR)%.c
-	$(CC) -c $(ARCHFLAGS) $(CFLAGS) -MMD -MP $< -o $@
+	$(CC) -c $(ARCHFLAGS) $(CFLAGS) -I$(CFGDIR) -MMD -MP $< -o $@
 
 clean:
 	$(RM) -r $(TARGET)

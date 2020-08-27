@@ -2,6 +2,7 @@
 
 #include "stm32renard_flags.h"
 #include "stm32renard_gpio.h"
+#include "conf_hardware.h"
 
 void stm32renard_gpio_init(void)
 {

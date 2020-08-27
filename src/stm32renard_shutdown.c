@@ -1,6 +1,7 @@
 #include "stm32l0xx_hal.h"
 
 #include "stm32renard_shutdown.h"
+#include "conf_hardware.h"
 
 void stm32renard_shutdown_init(void)
 {
